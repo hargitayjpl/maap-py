@@ -91,7 +91,7 @@ class MAAP(object):
         )
 
     def _get_api_endpoint(self, config_key):
-        return 'https://{}/api/{}'.format(self._MAAP_HOST, self.config.get("maap_endpoint", config_key))
+        return 'http://{}/api/{}'.format(self._MAAP_HOST, self.config.get("maap_endpoint", config_key))
 
     def _get_api_header(self, content_type=None):
 
